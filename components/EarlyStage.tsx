@@ -2,7 +2,10 @@ import { Reveal } from "./Reveal";
 
 export function EarlyStage() {
   return (
-    <section className="section relative overflow-hidden bg-ink text-white">
+    <section
+      data-cta-section="earlystage"
+      className="section relative overflow-hidden bg-ink text-white"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute -left-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-brand-600/30 blur-3xl"

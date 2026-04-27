@@ -4,7 +4,7 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Clarification() {
   return (
-    <section className="section">
+    <section data-cta-section="clarification" className="section">
       <div className="container-page">
         <Reveal className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">Qué hacemos</span>

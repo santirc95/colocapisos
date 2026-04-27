@@ -3,7 +3,11 @@ import { Reveal } from "./Reveal";
 
 export function Specialty() {
   return (
-    <section id="especialidad" className="section bg-surface-alt">
+    <section
+      id="especialidad"
+      data-cta-section="especialidad"
+      className="section bg-surface-alt"
+    >
       <div className="container-page">
         <Reveal className="mx-auto max-w-3xl">
           <span className="eyebrow">Especialidad</span>

@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 export function ServiceTypes() {
   return (
-    <section className="section">
+    <section data-cta-section="services" className="section">
       <div className="container-page">
         <Reveal className="mx-auto max-w-3xl">
           <span className="eyebrow">Servicios</span>

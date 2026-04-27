@@ -1,5 +1,5 @@
-import { NAV_LINKS, SITE, whatsappLink } from "@/lib/config";
-import { WhatsAppIcon } from "./WhatsAppIcon";
+import { NAV_LINKS, SITE } from "@/lib/config";
+import { HeaderCTA } from "./HeaderCTA";
 
 export function Header() {
   return (
@@ -31,16 +31,7 @@ export function Header() {
           ))}
         </nav>
 
-        <a
-          href={whatsappLink()}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary !px-4 !py-2 text-sm"
-        >
-          <WhatsAppIcon className="h-4 w-4" />
-          <span className="hidden sm:inline">Cotizar por WhatsApp</span>
-          <span className="sm:hidden">Cotizar</span>
-        </a>
+        <HeaderCTA />
       </div>
     </header>
   );

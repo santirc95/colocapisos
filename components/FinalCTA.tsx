@@ -4,7 +4,7 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function FinalCTA() {
   return (
-    <section className="section gradient-soft">
+    <section data-cta-section="finalcta" className="section gradient-soft">
       <div className="container-page">
         <Reveal className="relative mx-auto max-w-3xl overflow-hidden rounded-3xl border border-brand-100 bg-white p-10 text-center shadow-card sm:p-14">
           <div

@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 export function ForYou() {
   return (
-    <section className="section">
+    <section data-cta-section="foryou" className="section">
       <div className="container-page grid gap-12 lg:grid-cols-12 lg:items-center">
         <Reveal className="lg:col-span-6">
           <span className="eyebrow">Para quién</span>

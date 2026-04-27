@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 export function FAQ() {
   return (
-    <section id="faq" className="section">
+    <section id="faq" data-cta-section="faq" className="section">
       <div className="container-page">
         <Reveal className="mx-auto max-w-3xl">
           <span className="eyebrow">Preguntas frecuentes</span>

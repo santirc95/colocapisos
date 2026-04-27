@@ -4,7 +4,11 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-surface">
+    <section
+      id="top"
+      data-cta-section="hero"
+      className="relative overflow-hidden bg-surface"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[480px] bg-gradient-to-b from-brand-50 via-white to-white"

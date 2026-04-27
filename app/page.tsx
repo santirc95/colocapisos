@@ -10,7 +10,6 @@ import { EarlyStage } from "@/components/EarlyStage";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -29,7 +28,6 @@ export default function Home() {
         <FinalCTA />
       </main>
       <Footer />
-      <WhatsAppFloat />
     </>
   );
 }

@@ -25,6 +25,37 @@ export const NAV_LINKS = [
   { label: "FAQ", href: "#faq" },
 ];
 
+// Etiqueta y mensaje del botón del header según la sección visible.
+// Las claves coinciden con los `data-cta-section` de cada <section>.
+export type SectionCta = {
+  full: string;
+  short: string;
+  message?: string;
+};
+
+export const HEADER_CTA_BY_SECTION: Record<string, SectionCta> = {
+  hero: { full: "Cotizar por WhatsApp", short: "Cotizar" },
+  clarification: { full: "Hablar por WhatsApp", short: "Hablar" },
+  especialidad: { full: "Cotizar instalación", short: "Cotizar" },
+  services: { full: "Cotizar mi piso", short: "Cotizar" },
+  proceso: {
+    full: "Agendar revisión",
+    short: "Agendar",
+    message:
+      "Hola, me gustaría agendar una revisión presencial para mi proyecto.",
+  },
+  foryou: { full: "Cotizar mi proyecto", short: "Cotizar" },
+  earlystage: { full: "Hablar con nosotros", short: "Hablar" },
+  faq: {
+    full: "Resolver mi duda",
+    short: "Resolver",
+    message: "Hola, tengo una duda sobre la instalación de mi piso.",
+  },
+  finalcta: { full: "Cotizar por WhatsApp", short: "Cotizar" },
+};
+
+export const DEFAULT_CTA: SectionCta = HEADER_CTA_BY_SECTION.hero;
+
 export const TRUST_ITEMS = [
   {
     title: "Cotización clara",

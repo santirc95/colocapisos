@@ -8,7 +8,11 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Process() {
   return (
-    <section id="proceso" className="section bg-surface-alt">
+    <section
+      id="proceso"
+      data-cta-section="proceso"
+      className="section bg-surface-alt"
+    >
       <div className="container-page">
         <Reveal className="mx-auto max-w-3xl">
           <span className="eyebrow">Cómo trabajamos</span>
