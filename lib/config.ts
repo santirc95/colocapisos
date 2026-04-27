@@ -202,7 +202,7 @@ export const IMAGES = {
     desktop: "/images/colocapisos-hero-desktop.webp",
     mobile: "/images/colocapisos-hero-mobile.webp",
   },
-  installation: "/images/colocapisos-installation.webp",
+  installation: "/images/colocapisos-mosaico.webp",
   installer: "/images/colocapisos-instalador.webp",
 };
 
