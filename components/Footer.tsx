@@ -1,4 +1,4 @@
-import { SITE, whatsappLink } from "@/lib/config";
+import { SITE, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/config";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Footer() {
@@ -21,10 +21,10 @@ export function Footer() {
               href={whatsappLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-ink hover:text-accent"
+              className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-ink transition hover:text-accent"
             >
-              <WhatsAppIcon className="h-4 w-4" />
-              WhatsApp
+              <WhatsAppIcon className="h-4 w-4 text-accent" />
+              {WHATSAPP_DISPLAY}
             </a>
           </div>
 

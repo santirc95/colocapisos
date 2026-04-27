@@ -11,6 +11,8 @@ export const SITE = {
 // Número de WhatsApp en formato internacional, sin signos ni espacios.
 // Ejemplo: "525555555555" para +52 555 555 5555.
 export const WHATSAPP_NUMBER = "522227086824";
+// Versión legible para mostrar en footer/contacto.
+export const WHATSAPP_DISPLAY = "+52 222 708 6824";
 export const WHATSAPP_DEFAULT_MESSAGE =
   "Hola, me gustaría cotizar la instalación de mi piso.";
 
