@@ -104,17 +104,23 @@ export const SERVICE_TYPES = [
     description:
       "Ideal para interiores modernos, formatos grandes y acabados de alta resistencia.",
     highlight: true,
+    whatsappMessage:
+      "Hola, me gustaría cotizar la instalación de porcelanato.",
   },
   {
     title: "Cerámico",
     description:
       "Una opción práctica y versátil que requiere buena colocación para durar.",
     highlight: true,
+    whatsappMessage:
+      "Hola, me gustaría cotizar la instalación de cerámico.",
   },
   {
     title: "Otros pisos bajo evaluación",
     description: "Podemos revisar otros materiales según el proyecto.",
     highlight: false,
+    whatsappMessage:
+      "Hola, tengo otro tipo de piso y me gustaría saber si pueden instalarlo.",
   },
 ];
 
