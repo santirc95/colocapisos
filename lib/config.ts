@@ -196,6 +196,7 @@ export const IMAGES = {
     mobile: "/images/colocapisos-hero-mobile.webp",
   },
   installation: "/images/colocapisos-installation.webp",
+  installer: "/images/colocapisos-instalador.webp",
 };
 
 export const FOR_YOU_POINTS = [
