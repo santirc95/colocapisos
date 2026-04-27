@@ -1,10 +1,11 @@
 import { FOR_YOU_BULLETS, IMAGES } from "@/lib/config";
+import { Reveal } from "./Reveal";
 
 export function ForYou() {
   return (
     <section className="section">
       <div className="container-page grid gap-12 lg:grid-cols-12 lg:items-center">
-        <div className="lg:col-span-6">
+        <Reveal className="lg:col-span-6">
           <span className="eyebrow">Para quién</span>
           <h2 className="h2 mt-3">Este servicio es para ti si…</h2>
           <ul className="mt-8 space-y-4">
@@ -30,9 +31,9 @@ export function ForYou() {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
 
-        <div className="lg:col-span-6">
+        <Reveal className="lg:col-span-6" delay={0.1}>
           <div className="overflow-hidden rounded-2xl shadow-card ring-1 ring-surface-line">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -41,7 +42,7 @@ export function ForYou() {
               className="aspect-[4/3] w-full object-cover"
             />
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

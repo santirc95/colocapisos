@@ -1,4 +1,5 @@
 import { IMAGES, whatsappLink } from "@/lib/config";
+import { Reveal } from "./Reveal";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Hero() {
@@ -13,7 +14,7 @@ export function Hero() {
         className="pointer-events-none absolute -top-32 right-[-10%] -z-10 h-[420px] w-[420px] rounded-full bg-brand-200/50 blur-3xl"
       />
       <div className="container-page grid gap-12 pb-16 pt-12 sm:pt-16 lg:grid-cols-12 lg:items-center lg:gap-16 lg:pb-24 lg:pt-24">
-        <div className="lg:col-span-6">
+        <Reveal trigger="mount" y={20} className="lg:col-span-6">
           <span className="eyebrow">Servicio de instalación</span>
           <h1 className="h1 mt-4">
             Especialistas en instalación de{" "}
@@ -43,9 +44,9 @@ export function Hero() {
               Ver cómo trabajamos
             </a>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="lg:col-span-6">
+        <Reveal trigger="mount" y={20} delay={0.15} className="lg:col-span-6">
           <div className="relative overflow-hidden rounded-2xl bg-surface-alt shadow-card ring-1 ring-surface-line">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -57,7 +58,7 @@ export function Hero() {
               Instalación con sistema de nivelación
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

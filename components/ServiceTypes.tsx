@@ -1,13 +1,14 @@
 import { SERVICE_TYPES } from "@/lib/config";
+import { Reveal } from "./Reveal";
 
 export function ServiceTypes() {
   return (
     <section className="section">
       <div className="container-page">
-        <div className="mx-auto max-w-3xl">
+        <Reveal className="mx-auto max-w-3xl">
           <span className="eyebrow">Servicios</span>
           <h2 className="h2 mt-3">Tipos de instalación que realizamos</h2>
-        </div>
+        </Reveal>
 
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {SERVICE_TYPES.map((service) => (

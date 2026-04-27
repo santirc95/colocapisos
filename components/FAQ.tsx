@@ -1,13 +1,14 @@
 import { FAQS } from "@/lib/config";
+import { Reveal } from "./Reveal";
 
 export function FAQ() {
   return (
     <section id="faq" className="section">
       <div className="container-page">
-        <div className="mx-auto max-w-3xl">
+        <Reveal className="mx-auto max-w-3xl">
           <span className="eyebrow">Preguntas frecuentes</span>
           <h2 className="h2 mt-3">Lo que la gente nos pregunta</h2>
-        </div>
+        </Reveal>
 
         <div className="mx-auto mt-12 max-w-3xl divide-y divide-surface-line border-y border-surface-line">
           {FAQS.map((faq) => (

@@ -6,6 +6,21 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes float-pulse {
+  0%, 100% {
+    box-shadow: 0 12px 28px rgba(249, 115, 22, 0.22);
+  }
+  50% {
+    box-shadow: 0 14px 36px rgba(249, 115, 22, 0.38);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .float-pulse {
+    animation: float-pulse 2.8s ease-in-out infinite;
+  }
+}
+
 body {
   @apply bg-surface text-ink antialiased;
   font-feature-settings: "ss01", "cv11";

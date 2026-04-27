@@ -1,3 +1,5 @@
+import { Reveal } from "./Reveal";
+
 export function EarlyStage() {
   return (
     <section className="section relative overflow-hidden bg-ink text-white">
@@ -10,7 +12,7 @@ export function EarlyStage() {
         className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-rose-500/20 blur-3xl"
       />
       <div className="container-page relative">
-        <div className="mx-auto max-w-3xl text-center">
+        <Reveal className="mx-auto max-w-3xl text-center">
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-300">
             Honestidad
           </span>
@@ -23,7 +25,7 @@ export function EarlyStage() {
             ofrecer un servicio confiable, claro y bien ejecutado. Muy pronto
             compartiremos proyectos reales.
           </p>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

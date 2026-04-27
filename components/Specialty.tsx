@@ -1,10 +1,11 @@
 import { SPECIALTY_CARDS } from "@/lib/config";
+import { Reveal } from "./Reveal";
 
 export function Specialty() {
   return (
     <section id="especialidad" className="section bg-surface-alt">
       <div className="container-page">
-        <div className="mx-auto max-w-3xl">
+        <Reveal className="mx-auto max-w-3xl">
           <span className="eyebrow">Especialidad</span>
           <h2 className="h2 mt-3">
             Por qué el porcelanato y cerámico requieren una buena instalación
@@ -14,7 +15,7 @@ export function Specialty() {
             instalación puede provocar desniveles, juntas irregulares, piezas
             mal alineadas o acabados poco limpios.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SPECIALTY_CARDS.map((card, idx) => (

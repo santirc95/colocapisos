@@ -1,11 +1,12 @@
 import { whatsappLink } from "@/lib/config";
+import { Reveal } from "./Reveal";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Clarification() {
   return (
     <section className="section">
       <div className="container-page">
-        <div className="mx-auto max-w-3xl text-center">
+        <Reveal className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">Qué hacemos</span>
           <h2 className="h2 mt-3">
             Nos enfocamos en colocar, no en vender pisos
@@ -26,7 +27,7 @@ export function Clarification() {
               Hablar por WhatsApp
             </a>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
