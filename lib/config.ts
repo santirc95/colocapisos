@@ -162,14 +162,6 @@ export const PROCESS_STEPS = [
 export const VISIT_WHATSAPP_MESSAGE =
   "Hola, me gustaría agendar una revisión presencial para mi proyecto.";
 
-export const FOR_YOU_BULLETS = [
-  "Ya compraste porcelanato o cerámico y necesitas instalarlo",
-  "Quieres evitar una mala colocación",
-  "Buscas un trabajo limpio y bien terminado",
-  "Necesitas claridad antes de iniciar la obra",
-  "Quieres cotizar rápido por WhatsApp",
-];
-
 export const FAQS = [
   {
     q: "¿Venden pisos?",
@@ -203,6 +195,13 @@ export const IMAGES = {
     desktop: "/images/colocapisos-hero-desktop.webp",
     mobile: "/images/colocapisos-hero-mobile.webp",
   },
-  process:
-    "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80",
+  installation: "/images/colocapisos-installation.webp",
 };
+
+export const FOR_YOU_POINTS = [
+  "Ya tienes el porcelanato o cerámico… pero no quieres que lo arruinen",
+  "Te preocupa que quede mal nivelado o con detalles visibles",
+  "Quieres un acabado limpio, alineado y bien terminado",
+  "Prefieres alguien que llegue, mida bien y te diga exactamente qué hacer",
+  "Buscas evitar retrabajos, pérdidas de material y estrés",
+];

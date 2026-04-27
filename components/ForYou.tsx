@@ -1,46 +1,55 @@
-import { FOR_YOU_BULLETS, IMAGES } from "@/lib/config";
+import { FOR_YOU_POINTS, IMAGES } from "@/lib/config";
 import { Reveal } from "./Reveal";
 
 export function ForYou() {
   return (
-    <section data-cta-section="foryou" className="section">
-      <div className="container-page grid gap-12 lg:grid-cols-12 lg:items-center">
-        <Reveal className="lg:col-span-6">
-          <span className="eyebrow">Para quién</span>
-          <h2 className="h2 mt-3">Este servicio es para ti si…</h2>
-          <ul className="mt-8 space-y-4">
-            {FOR_YOU_BULLETS.map((item) => (
-              <li key={item} className="flex items-start gap-3">
-                <span
-                  aria-hidden
-                  className="mt-1 grid h-6 w-6 flex-none place-items-center rounded-full border border-accent text-accent"
-                >
-                  <svg
-                    viewBox="0 0 20 20"
-                    className="h-3.5 w-3.5"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.704 5.29a1 1 0 0 1 .006 1.414l-7.5 7.6a1 1 0 0 1-1.42.006l-3.5-3.5a1 1 0 1 1 1.414-1.415l2.79 2.79 6.79-6.88a1 1 0 0 1 1.42-.015Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-                <span className="text-base text-ink">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </Reveal>
-
-        <Reveal className="lg:col-span-6" delay={0.1}>
+    <section
+      data-cta-section="foryou"
+      className="py-16 md:py-24 lg:py-28"
+    >
+      <div className="container-page grid items-center gap-10 md:grid-cols-2 md:gap-14 lg:gap-20">
+        <Reveal>
           <div className="overflow-hidden rounded-2xl shadow-card ring-1 ring-surface-line">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={IMAGES.process}
-              alt="Detalle de instalación de cerámico"
-              className="aspect-[4/3] w-full object-cover"
+              src={IMAGES.installation}
+              alt="Instalación de porcelanato con sistema de nivelación, juntas alineadas y acabados limpios"
+              loading="lazy"
+              className="aspect-[4/5] w-full object-cover sm:aspect-[5/4] md:aspect-[4/5] lg:aspect-[4/5]"
             />
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.1}>
+          <div className="max-w-md">
+            <h2 className="h2">¿Te suena familiar?</h2>
+
+            <ul className="mt-8 space-y-5">
+              {FOR_YOU_POINTS.map((point) => (
+                <li key={point} className="flex items-start gap-3">
+                  <svg
+                    aria-hidden
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="mt-1.5 h-4 w-4 flex-none text-accent"
+                  >
+                    <path d="M5 10.5 8.5 14 15 6.5" />
+                  </svg>
+                  <span className="text-base leading-relaxed text-ink">
+                    {point}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-8 border-t border-surface-line pt-6 text-base font-semibold leading-relaxed text-ink">
+              Este servicio es para quienes quieren que las cosas queden bien
+              desde la primera vez.
+            </p>
           </div>
         </Reveal>
       </div>
