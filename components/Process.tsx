@@ -1,4 +1,8 @@
-import { PROCESS_STEPS, whatsappLink } from "@/lib/config";
+import {
+  PROCESS_STEPS,
+  VISIT_WHATSAPP_MESSAGE,
+  whatsappLink,
+} from "@/lib/config";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Process() {
@@ -6,35 +10,42 @@ export function Process() {
     <section id="proceso" className="section bg-surface-alt">
       <div className="container-page">
         <div className="mx-auto max-w-3xl">
-          <span className="eyebrow">Proceso</span>
-          <h2 className="h2 mt-3">Así cotizamos tu instalación</h2>
+          <span className="eyebrow">Cómo trabajamos</span>
+          <h2 className="h2 mt-3">Así trabajamos contigo</h2>
+          <p className="lead mt-5">
+            Para darte una cotización precisa y evitar errores, buscamos
+            entender bien tu espacio antes de instalar.
+          </p>
         </div>
 
-        <ol className="mt-12 grid gap-4 lg:grid-cols-5">
+        <ol className="mt-12 space-y-4">
           {PROCESS_STEPS.map((step) => (
             <li
               key={step.step}
-              className="flex h-full flex-col rounded-2xl border border-surface-line bg-white p-6 shadow-card"
+              className="flex gap-5 rounded-2xl border border-surface-line bg-white p-6 shadow-card sm:p-7"
             >
-              <span className="grid h-8 w-8 place-items-center rounded-full bg-ink text-sm font-semibold text-white">
+              <span className="grid h-10 w-10 flex-none place-items-center rounded-full gradient-warm text-sm font-semibold text-white">
                 {step.step}
               </span>
-              <p className="mt-4 text-sm font-medium leading-snug text-ink">
-                {step.title}
-              </p>
+              <div>
+                <h3 className="h3">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+                  {step.description}
+                </p>
+              </div>
             </li>
           ))}
         </ol>
 
         <div className="mt-10 flex justify-center">
           <a
-            href={whatsappLink()}
+            href={whatsappLink(VISIT_WHATSAPP_MESSAGE)}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
           >
             <WhatsAppIcon />
-            Solicitar cotización
+            Agendar revisión por WhatsApp
           </a>
         </div>
       </div>

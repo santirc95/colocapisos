@@ -5,7 +5,7 @@ export const SITE = {
   domain: "colocapisos.com",
   tagline: "Especialistas en instalación de porcelanato y cerámico",
   shortDescription: "Instalación profesional de porcelanato y cerámico",
-  area: "CDMX y zona metropolitana",
+  area: "Puebla",
 };
 
 // Reemplaza el placeholder por el número real (formato internacional, sin signos).
@@ -88,12 +88,40 @@ export const SERVICE_TYPES = [
 ];
 
 export const PROCESS_STEPS = [
-  { step: 1, title: "Nos escribes por WhatsApp" },
-  { step: 2, title: "Nos compartes medidas, fotos y tipo de piso" },
-  { step: 3, title: "Revisamos detalles del proyecto" },
-  { step: 4, title: "Te damos una cotización clara" },
-  { step: 5, title: "Coordinamos fecha de instalación" },
+  {
+    step: 1,
+    title: "Primer contacto por WhatsApp",
+    description:
+      "Nos escribes y nos cuentas sobre tu proyecto. Podemos resolver dudas iniciales y coordinar una visita si es necesario.",
+  },
+  {
+    step: 2,
+    title: "Visita e inspección del espacio",
+    description:
+      "Agendamos una visita para revisar el área, tomar medidas y evaluar condiciones como nivelación, superficie y tipo de piso.",
+  },
+  {
+    step: 3,
+    title: "Cotización clara",
+    description:
+      "Con base en la inspección, te enviamos una cotización detallada de la instalación, sin sorpresas.",
+  },
+  {
+    step: 4,
+    title: "Coordinación de instalación",
+    description:
+      "Definimos fecha de inicio y organizamos todo para ejecutar el trabajo de forma ordenada y profesional.",
+  },
+  {
+    step: 5,
+    title: "Ejecución y seguimiento",
+    description:
+      "Realizamos la instalación cuidando cada detalle y manteniendo comunicación durante el proceso.",
+  },
 ];
+
+export const VISIT_WHATSAPP_MESSAGE =
+  "Hola, me gustaría agendar una revisión presencial para mi proyecto.";
 
 export const FOR_YOU_BULLETS = [
   "Ya compraste porcelanato o cerámico y necesitas instalarlo",
@@ -126,7 +154,7 @@ export const FAQS = [
   },
   {
     q: "¿Dónde trabajan?",
-    a: "Principalmente en CDMX y zona metropolitana.",
+    a: "Estamos comenzando operaciones en Puebla.",
   },
 ];
 
