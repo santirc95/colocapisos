@@ -8,9 +8,9 @@ export const SITE = {
   area: "Puebla",
 };
 
-// Reemplaza el placeholder por el número real (formato internacional, sin signos).
-// Ejemplo: "525555555555".
-export const WHATSAPP_NUMBER = "52XXXXXXXXXX";
+// Número de WhatsApp en formato internacional, sin signos ni espacios.
+// Ejemplo: "525555555555" para +52 555 555 5555.
+export const WHATSAPP_NUMBER = "522227086824";
 export const WHATSAPP_DEFAULT_MESSAGE =
   "Hola, me gustaría cotizar la instalación de mi piso.";
 
