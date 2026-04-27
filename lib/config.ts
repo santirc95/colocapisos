@@ -106,6 +106,8 @@ export const SERVICE_TYPES = [
     description:
       "Ideal para interiores modernos, formatos grandes y acabados de alta resistencia.",
     highlight: true,
+    image: "/images/colocapisos-porcelanato.webp",
+    imageAlt: "Sala minimalista con porcelanato pulido de gran formato",
     whatsappMessage:
       "Hola, me gustaría cotizar la instalación de porcelanato.",
   },
@@ -114,15 +116,20 @@ export const SERVICE_TYPES = [
     description:
       "Una opción práctica y versátil que requiere buena colocación para durar.",
     highlight: true,
+    image: "/images/colocapisos-ceramico.webp",
+    imageAlt: "Sala con piso cerámico beige y luz natural cálida",
     whatsappMessage:
       "Hola, me gustaría cotizar la instalación de cerámico.",
   },
   {
-    title: "Otros pisos bajo evaluación",
-    description: "Podemos revisar otros materiales según el proyecto.",
+    title: "Madera",
+    description:
+      "Piso de madera o símil madera. Cuidamos nivelación, juntas y acabados para que dure parejo.",
     highlight: false,
+    image: "/images/colocapisos-madera.webp",
+    imageAlt: "Sala con piso de madera y sofá blanco al fondo",
     whatsappMessage:
-      "Hola, tengo otro tipo de piso y me gustaría saber si pueden instalarlo.",
+      "Hola, me gustaría cotizar la instalación de piso de madera.",
   },
 ];
 
