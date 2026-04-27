@@ -8,7 +8,7 @@ export function Header() {
         <a href="#top" className="flex items-center gap-2">
           <span
             aria-hidden
-            className="grid h-8 w-8 place-items-center rounded-md bg-ink text-white"
+            className="grid h-8 w-8 place-items-center rounded-md gradient-warm text-white shadow-sm"
           >
             <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor">
               <path d="M2 4h7v7H2zM11 4h7v7h-7zM2 13h7v3H2zM11 13h7v3h-7z" />

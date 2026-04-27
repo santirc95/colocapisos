@@ -20,12 +20,21 @@ const config: Config = {
           line: "#E2E8F0",
         },
         accent: {
-          DEFAULT: "#0F766E",
-          soft: "#CCFBF1",
+          DEFAULT: "#EA580C",
+          soft: "#FFEDD5",
+          deep: "#9A3412",
+          glow: "#FED7AA",
         },
-        whatsapp: {
-          DEFAULT: "#25D366",
-          dark: "#1DA851",
+        brand: {
+          50: "#FFF7ED",
+          100: "#FFEDD5",
+          200: "#FED7AA",
+          300: "#FDBA74",
+          400: "#FB923C",
+          500: "#F97316",
+          600: "#EA580C",
+          700: "#C2410C",
+          800: "#9A3412",
         },
       },
       fontFamily: {

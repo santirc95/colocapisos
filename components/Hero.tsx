@@ -4,12 +4,22 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-surface">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[480px] bg-gradient-to-b from-brand-50 via-white to-white"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-32 right-[-10%] -z-10 h-[420px] w-[420px] rounded-full bg-brand-200/50 blur-3xl"
+      />
       <div className="container-page grid gap-12 pb-16 pt-12 sm:pt-16 lg:grid-cols-12 lg:items-center lg:gap-16 lg:pb-24 lg:pt-24">
         <div className="lg:col-span-6">
           <span className="eyebrow">Servicio de instalación</span>
           <h1 className="h1 mt-4">
             Especialistas en instalación de{" "}
-            <span className="text-accent">porcelanato y cerámico</span>
+            <span className="text-gradient-sunset">
+              porcelanato y cerámico
+            </span>
           </h1>
           <p className="lead mt-5 max-w-xl">
             Instalamos tu piso con precisión, orden y acabados limpios. Si ya

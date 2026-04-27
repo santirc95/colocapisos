@@ -36,12 +36,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-2 border-t border-surface-line pt-6 text-xs text-ink-subtle sm:flex-row sm:items-center">
+        <div className="mt-10 border-t border-surface-line pt-6 text-xs text-ink-subtle">
           <p>
-            © {new Date().getFullYear()} {SITE.name}. Todos los derechos
+            © {new Date().getFullYear()} {SITE.name} — Todos los derechos
             reservados.
           </p>
-          <p>{SITE.domain}</p>
         </div>
       </div>
     </footer>

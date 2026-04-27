@@ -1,7 +1,7 @@
 // Configuración centralizada — edita aquí los textos, número de WhatsApp y servicios.
 
 export const SITE = {
-  name: "Coloca Pisos",
+  name: "colocapisos.com",
   domain: "colocapisos.com",
   tagline: "Especialistas en instalación de porcelanato y cerámico",
   shortDescription: "Instalación profesional de porcelanato y cerámico",
