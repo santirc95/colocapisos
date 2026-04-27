@@ -197,10 +197,12 @@ export const FAQS = [
   },
 ];
 
-// Imágenes (Unsplash). Sustituibles por imágenes propias en /public.
+// Imágenes locales en /public/images. Sustituye por archivos propios.
 export const IMAGES = {
-  hero:
-    "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80",
+  hero: {
+    desktop: "/images/colocapisos-hero-desktop.webp",
+    mobile: "/images/colocapisos-hero-mobile.webp",
+  },
   process:
     "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80",
 };

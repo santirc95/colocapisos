@@ -52,12 +52,18 @@ export function Hero() {
 
         <Reveal trigger="mount" y={20} delay={0.15} className="lg:col-span-6">
           <div className="relative overflow-hidden rounded-2xl bg-surface-alt shadow-card ring-1 ring-surface-line">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={IMAGES.hero}
-              alt="Instalación profesional de porcelanato"
-              className="aspect-[4/5] w-full object-cover sm:aspect-[5/4] lg:aspect-[4/5]"
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcSet={IMAGES.hero.desktop}
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={IMAGES.hero.mobile}
+                alt="Instalación de piso con sistema de nivelación"
+                className="aspect-[4/5] w-full object-cover md:aspect-[5/4] lg:aspect-[4/3]"
+              />
+            </picture>
             <div className="absolute bottom-4 left-4 rounded-full bg-white/95 px-3 py-1.5 text-xs font-medium text-ink shadow-sm ring-1 ring-surface-line">
               Instalación con sistema de nivelación
             </div>
