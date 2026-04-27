@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface text-ink antialiased;
+  font-feature-settings: "ss01", "cv11";
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8 lg:px-12;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-whatsapp text-white shadow-card hover:bg-whatsapp-dark focus-visible:ring-whatsapp;
+  }
+
+  .btn-secondary {
+    @apply btn border border-surface-line bg-white text-ink hover:bg-surface-alt focus-visible:ring-ink/30;
+  }
+
+  .section {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent;
+  }
+
+  .h1 {
+    @apply text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-6xl;
+  }
+
+  .h2 {
+    @apply text-3xl font-semibold tracking-tight text-ink sm:text-4xl;
+  }
+
+  .h3 {
+    @apply text-lg font-semibold text-ink;
+  }
+
+  .lead {
+    @apply text-base leading-relaxed text-ink-muted sm:text-lg;
+  }
+}
