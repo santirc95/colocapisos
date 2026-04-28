@@ -13,7 +13,7 @@ export function ForYou() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={IMAGES.installation}
-              alt="Instalación de porcelanato con sistema de nivelación, juntas alineadas y acabados limpios"
+              alt="Instalación de piso con detalle de juntas y nivelación"
               loading="lazy"
               className="aspect-[4/5] w-full object-cover sm:aspect-[5/4] md:aspect-[4/5] lg:aspect-[4/5]"
             />
@@ -22,7 +22,8 @@ export function ForYou() {
 
         <Reveal delay={0.1}>
           <div className="max-w-md">
-            <h2 className="h2">¿Te suena familiar?</h2>
+            <span className="eyebrow">Para quién</span>
+            <h2 className="h2 mt-3">Este servicio es para ti si:</h2>
 
             <ul className="mt-8 space-y-5">
               {FOR_YOU_POINTS.map((point) => (
@@ -45,11 +46,6 @@ export function ForYou() {
                 </li>
               ))}
             </ul>
-
-            <p className="mt-8 border-t border-surface-line pt-6 text-base font-semibold leading-relaxed text-ink">
-              Este servicio es para quienes quieren que las cosas queden bien
-              desde la primera vez.
-            </p>
           </div>
         </Reveal>
       </div>

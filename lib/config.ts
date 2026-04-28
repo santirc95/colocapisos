@@ -3,9 +3,9 @@
 export const SITE = {
   name: "colocapisos.com",
   domain: "colocapisos.com",
-  tagline: "Especialistas en instalación de porcelanato y cerámico",
+  tagline: "Instalación profesional de porcelanato y cerámico",
   shortDescription: "Instalación profesional de porcelanato y cerámico",
-  area: "Puebla",
+  area: "CDMX y zona metropolitana",
 };
 
 // Número de WhatsApp en formato internacional, sin signos ni espacios.
@@ -15,6 +15,8 @@ export const WHATSAPP_NUMBER = "522227086824";
 export const WHATSAPP_DISPLAY = "+52 222 708 6824";
 export const WHATSAPP_DEFAULT_MESSAGE =
   "Hola, me gustaría cotizar la instalación de mi piso.";
+export const VISIT_WHATSAPP_MESSAGE =
+  "Hola, me gustaría agendar una revisión presencial para mi proyecto.";
 
 export const whatsappLink = (
   message: string = WHATSAPP_DEFAULT_MESSAGE
@@ -36,75 +38,62 @@ export type SectionCta = {
 };
 
 export const HEADER_CTA_BY_SECTION: Record<string, SectionCta> = {
-  hero: { full: "Cotizar por WhatsApp", short: "Cotizar" },
-  clarification: { full: "Hablar por WhatsApp", short: "Hablar" },
-  especialidad: { full: "Cotizar instalación", short: "Cotizar" },
+  hero: {
+    full: "Agendar revisión",
+    short: "Agendar",
+    message: VISIT_WHATSAPP_MESSAGE,
+  },
+  clarification: {
+    full: "Agendar por WhatsApp",
+    short: "Agendar",
+    message: VISIT_WHATSAPP_MESSAGE,
+  },
   services: { full: "Cotizar mi piso", short: "Cotizar" },
+  especialidad: {
+    full: "Agendar revisión",
+    short: "Agendar",
+    message: VISIT_WHATSAPP_MESSAGE,
+  },
   proceso: {
     full: "Agendar revisión",
     short: "Agendar",
-    message:
-      "Hola, me gustaría agendar una revisión presencial para mi proyecto.",
+    message: VISIT_WHATSAPP_MESSAGE,
   },
-  foryou: { full: "Cotizar mi proyecto", short: "Cotizar" },
-  earlystage: { full: "Hablar con nosotros", short: "Hablar" },
+  foryou: {
+    full: "Agendar revisión",
+    short: "Agendar",
+    message: VISIT_WHATSAPP_MESSAGE,
+  },
+  confidence: {
+    full: "Hablar con nosotros",
+    short: "Hablar",
+  },
   faq: {
     full: "Resolver mi duda",
     short: "Resolver",
     message: "Hola, tengo una duda sobre la instalación de mi piso.",
   },
-  finalcta: { full: "Cotizar por WhatsApp", short: "Cotizar" },
+  finalcta: {
+    full: "Agendar por WhatsApp",
+    short: "Agendar",
+    message: VISIT_WHATSAPP_MESSAGE,
+  },
 };
 
 export const DEFAULT_CTA: SectionCta = HEADER_CTA_BY_SECTION.hero;
 
-export const TRUST_ITEMS = [
-  {
-    title: "Cotización clara",
-    description: "Sin sorpresas: precios transparentes y desglosados.",
-  },
-  {
-    title: "Instaladores profesionales",
-    description: "Equipos enfocados en colocación, no en venta.",
-  },
-  {
-    title: "Trabajo limpio y ordenado",
-    description: "Cuidamos tu obra y dejamos el espacio en orden.",
-  },
-  {
-    title: "Especialistas en porcelanato y cerámico",
-    description: "Es lo que hacemos todos los días.",
-  },
-];
-
-export const SPECIALTY_CARDS = [
-  {
-    title: "Preparación correcta de superficie",
-    description:
-      "Una base mal preparada compromete el piso. Revisamos nivelación, humedad y estado del firme.",
-  },
-  {
-    title: "Nivelación y alineación",
-    description:
-      "Usamos sistemas de nivelación para evitar cejas y mantener un plano uniforme.",
-  },
-  {
-    title: "Cortes precisos",
-    description:
-      "Cortes a medida en bordes, columnas y registros, sin desperdicio innecesario.",
-  },
-  {
-    title: "Juntas limpias y uniformes",
-    description:
-      "Distribución pareja de juntas y boquilla bien ejecutada, para un acabado prolijo.",
-  },
+export const SPECIALTY_BULLETS = [
+  "Preparación correcta de superficie",
+  "Nivelación y alineación",
+  "Cortes precisos",
+  "Juntas limpias y uniformes",
 ];
 
 export const SERVICE_TYPES = [
   {
     title: "Porcelanato",
     description:
-      "Ideal para interiores modernos, formatos grandes y acabados de alta resistencia.",
+      "Ideal para formatos grandes y espacios modernos. Requiere precisión y nivelación correcta.",
     highlight: true,
     image: "/images/colocapisos-porcelanato.webp",
     imageAlt: "Sala minimalista con porcelanato pulido de gran formato",
@@ -114,7 +103,7 @@ export const SERVICE_TYPES = [
   {
     title: "Cerámico",
     description:
-      "Una opción práctica y versátil que requiere buena colocación para durar.",
+      "Una opción versátil que necesita buena colocación para lograr un acabado limpio y duradero.",
     highlight: true,
     image: "/images/colocapisos-ceramico.webp",
     imageAlt: "Sala con piso cerámico beige y luz natural cálida",
@@ -122,14 +111,13 @@ export const SERVICE_TYPES = [
       "Hola, me gustaría cotizar la instalación de cerámico.",
   },
   {
-    title: "Madera",
-    description:
-      "Piso de madera o símil madera. Cuidamos nivelación, juntas y acabados para que dure parejo.",
+    title: "Otros bajo evaluación",
+    description: "Podemos revisar otros tipos de piso según el proyecto.",
     highlight: false,
     image: "/images/colocapisos-madera.webp",
     imageAlt: "Sala con piso de madera y sofá blanco al fondo",
     whatsappMessage:
-      "Hola, me gustaría cotizar la instalación de piso de madera.",
+      "Hola, tengo otro tipo de piso y me gustaría saber si pueden instalarlo.",
   },
 ];
 
@@ -138,36 +126,40 @@ export const PROCESS_STEPS = [
     step: 1,
     title: "Primer contacto por WhatsApp",
     description:
-      "Nos escribes y nos cuentas sobre tu proyecto. Podemos resolver dudas iniciales y coordinar una visita si es necesario.",
+      "Nos escribes y nos cuentas sobre tu proyecto. Podemos resolver dudas iniciales y coordinar una visita.",
   },
   {
     step: 2,
-    title: "Visita e inspección del espacio",
+    title: "Visita e inspección",
     description:
-      "Agendamos una visita para revisar el área, tomar medidas y evaluar condiciones como nivelación, superficie y tipo de piso.",
+      "Agendamos una visita para revisar el área, tomar medidas y evaluar condiciones del espacio.",
   },
   {
     step: 3,
     title: "Cotización clara",
     description:
-      "Con base en la inspección, te enviamos una cotización detallada de la instalación, sin sorpresas.",
+      "Con base en la inspección, te enviamos una cotización detallada sin sorpresas.",
   },
   {
     step: 4,
-    title: "Coordinación de instalación",
-    description:
-      "Definimos fecha de inicio y organizamos todo para ejecutar el trabajo de forma ordenada y profesional.",
+    title: "Coordinación",
+    description: "Definimos fecha y organizamos la instalación.",
   },
   {
     step: 5,
-    title: "Ejecución y seguimiento",
+    title: "Ejecución",
     description:
-      "Realizamos la instalación cuidando cada detalle y manteniendo comunicación durante el proceso.",
+      "Realizamos el trabajo cuidando cada detalle y manteniendo comunicación.",
   },
 ];
 
-export const VISIT_WHATSAPP_MESSAGE =
-  "Hola, me gustaría agendar una revisión presencial para mi proyecto.";
+export const FOR_YOU_POINTS = [
+  "Ya compraste porcelanato o cerámico",
+  "Quieres evitar errores en la instalación",
+  "Buscas un trabajo limpio y bien terminado",
+  "Necesitas claridad antes de iniciar",
+  "Prefieres una revisión presencial antes de cotizar",
+];
 
 export const FAQS = [
   {
@@ -175,24 +167,20 @@ export const FAQS = [
     a: "No. Nos especializamos únicamente en la instalación.",
   },
   {
-    q: "¿Pueden instalar piso que yo ya compré?",
+    q: "¿Pueden instalar piso que ya compré?",
     a: "Sí, ese es nuestro servicio principal.",
   },
   {
-    q: "¿Me pueden orientar antes de comprar el piso?",
-    a: "Sí, podemos ayudarte a revisar si el material es adecuado para tu espacio.",
+    q: "¿Pueden asesorarme antes de comprar?",
+    a: "Sí, podemos ayudarte a revisar el material antes de instalarlo.",
   },
   {
-    q: "¿Qué información necesitan para cotizar?",
-    a: "Medidas aproximadas, fotos del espacio, tipo de piso y ubicación.",
+    q: "¿Qué necesitan para cotizar?",
+    a: "Podemos darte una idea inicial por WhatsApp, pero lo ideal es hacer una visita para revisar el espacio.",
   },
   {
-    q: "¿Instalan porcelanato de gran formato?",
-    a: "Sí, lo evaluamos según el espacio, formato y condiciones de superficie.",
-  },
-  {
-    q: "¿Dónde trabajan?",
-    a: "Estamos comenzando operaciones en Puebla.",
+    q: "¿Trabajan en CDMX?",
+    a: "Sí, trabajamos en Ciudad de México y zona metropolitana.",
   },
 ];
 
@@ -205,11 +193,3 @@ export const IMAGES = {
   installation: "/images/colocapisos-mosaico.webp",
   installer: "/images/colocapisos-instalador.webp",
 };
-
-export const FOR_YOU_POINTS = [
-  "Ya tienes el porcelanato o cerámico… pero no quieres que lo arruinen",
-  "Te preocupa que quede mal nivelado o con detalles visibles",
-  "Quieres un acabado limpio, alineado y bien terminado",
-  "Prefieres alguien que llegue, mida bien y te diga exactamente qué hacer",
-  "Buscas evitar retrabajos, pérdidas de material y estrés",
-];

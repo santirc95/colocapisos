@@ -1,4 +1,4 @@
-import { IMAGES, whatsappLink } from "@/lib/config";
+import { IMAGES, VISIT_WHATSAPP_MESSAGE, whatsappLink } from "@/lib/config";
 import { Reveal } from "./Reveal";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
@@ -21,14 +21,16 @@ export function Hero() {
         <Reveal trigger="mount" y={20} className="lg:col-span-6">
           <span className="eyebrow">Servicio de instalación</span>
           <h1 className="h1 mt-4">
-            Especialistas en instalación de{" "}
+            Instalación profesional de{" "}
             <span className="text-gradient-sunset">
               porcelanato y cerámico
             </span>
           </h1>
           <p className="lead mt-5 max-w-xl">
-            Instalamos tu piso con precisión, orden y acabados limpios. Si ya
-            tienes el material, te ayudamos a colocarlo correctamente.
+            Sin errores, sin sorpresas y con acabados precisos.
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-ink-muted">
+            Revisamos tu espacio en sitio para darte una cotización clara.
           </p>
           <p className="mt-3 text-sm text-ink-subtle">
             No vendemos pisos. Nos especializamos en la instalación.
@@ -36,13 +38,13 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href={whatsappLink()}
+              href={whatsappLink(VISIT_WHATSAPP_MESSAGE)}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
             >
               <WhatsAppIcon />
-              Cotizar por WhatsApp
+              Agendar revisión por WhatsApp
             </a>
             <a href="#proceso" className="btn-secondary">
               Ver cómo trabajamos

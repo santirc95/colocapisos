@@ -1,4 +1,4 @@
-import { whatsappLink } from "@/lib/config";
+import { VISIT_WHATSAPP_MESSAGE, whatsappLink } from "@/lib/config";
 import { Reveal } from "./Reveal";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
@@ -16,18 +16,20 @@ export function FinalCTA() {
             <span className="text-gradient-warm">porcelanato o cerámico</span>?
           </h2>
           <p className="lead mt-4">
-            Cuéntanos sobre tu proyecto y recibe una cotización clara por
-            WhatsApp.
+            Agenda una revisión y recibe una cotización clara para tu proyecto.
+          </p>
+          <p className="mt-3 text-sm text-ink-subtle">
+            Atendemos un número limitado de proyectos por semana.
           </p>
           <div className="mt-8 flex justify-center">
             <a
-              href={whatsappLink()}
+              href={whatsappLink(VISIT_WHATSAPP_MESSAGE)}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
             >
               <WhatsAppIcon />
-              Cotizar por WhatsApp
+              Agendar por WhatsApp
             </a>
           </div>
         </Reveal>

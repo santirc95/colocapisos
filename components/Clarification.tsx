@@ -1,4 +1,4 @@
-import { whatsappLink } from "@/lib/config";
+import { VISIT_WHATSAPP_MESSAGE, whatsappLink } from "@/lib/config";
 import { Reveal } from "./Reveal";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
@@ -9,22 +9,26 @@ export function Clarification() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <span className="eyebrow">Qué hacemos</span>
           <h2 className="h2 mt-3">
-            Nos enfocamos en colocar, no en vender pisos
+            Nos enfocamos en instalar, no en vender pisos
           </h2>
           <p className="lead mt-5">
-            Si ya compraste tu porcelanato o cerámico, podemos ayudarte con la
-            instalación. Si todavía estás evaluando qué material comprar, también
-            podemos orientarte para evitar errores antes de colocarlo.
+            Nos especializamos en la instalación de pisos. No vendemos
+            materiales, pero podemos orientarte para elegirlos correctamente y
+            evitar errores antes de colocarlo.
+          </p>
+          <p className="mt-4 text-base text-ink-muted sm:text-lg">
+            Nos enfocamos principalmente en porcelanato y cerámico, donde el
+            detalle hace toda la diferencia.
           </p>
           <div className="mt-8 flex justify-center">
             <a
-              href={whatsappLink()}
+              href={whatsappLink(VISIT_WHATSAPP_MESSAGE)}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
             >
               <WhatsAppIcon />
-              Hablar por WhatsApp
+              Agendar por WhatsApp
             </a>
           </div>
         </Reveal>

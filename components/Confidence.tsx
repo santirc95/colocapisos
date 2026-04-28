@@ -1,9 +1,9 @@
 import { Reveal } from "./Reveal";
 
-export function EarlyStage() {
+export function Confidence() {
   return (
     <section
-      data-cta-section="earlystage"
+      data-cta-section="confidence"
       className="section relative overflow-hidden bg-ink text-white"
     >
       <div
@@ -17,16 +17,16 @@ export function EarlyStage() {
       <div className="container-page relative">
         <Reveal className="mx-auto max-w-3xl text-center">
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-300">
-            Honestidad
+            Nuestro enfoque
           </span>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Estamos{" "}
-            <span className="text-gradient-warm">comenzando operaciones</span>
+            Un enfoque{" "}
+            <span className="text-gradient-warm">claro desde el inicio</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-white/75 sm:text-lg">
-            Estamos construyendo una red de colocadores profesionales para
-            ofrecer un servicio confiable, claro y bien ejecutado. Muy pronto
-            compartiremos proyectos reales.
+            Estamos construyendo un servicio enfocado en instalaciones bien
+            hechas, claras y sin improvisación. Nuestro objetivo es que tengas
+            certeza desde la cotización hasta la ejecución.
           </p>
         </Reveal>
       </div>
