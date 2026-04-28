@@ -5,7 +5,7 @@ export const SITE = {
   domain: "colocapisos.com",
   tagline: "Instalación profesional de porcelanato y cerámico",
   shortDescription: "Instalación profesional de porcelanato y cerámico",
-  area: "CDMX y zona metropolitana",
+  area: "Puebla, Pue.",
 };
 
 // Número de WhatsApp en formato internacional, sin signos ni espacios.
@@ -179,8 +179,8 @@ export const FAQS = [
     a: "Podemos darte una idea inicial por WhatsApp, pero lo ideal es hacer una visita para revisar el espacio.",
   },
   {
-    q: "¿Trabajan en CDMX?",
-    a: "Sí, trabajamos en Ciudad de México y zona metropolitana.",
+    q: "¿Dónde trabajan?",
+    a: "Trabajamos en Puebla, Pue.",
   },
 ];
 
